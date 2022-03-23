@@ -1,0 +1,96 @@
+header, nav, main, footer, aside {
+  display: block;
+}
+
+body {
+  background-color: #97D398;
+  color: #000000;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+main {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+header {
+  background-color: #FFFFFF;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+  font-family: serif;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: serif;
+}
+
+h4 {
+  font-style: italic;
+}
+
+nav {
+  background-color: #7D766C;
+  float: none;
+  width: auto;
+  text-align: center;
+  font-family: serif;
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:link {
+  color: #E7E2DA;
+}
+
+nav a:visited {
+  color: #D2E0D0;
+}
+
+nav a:focus, nav a:hover {
+  color: #C1B6A8;
+}
+
+nav a:active {
+  color: #000000;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  text-align: middle;
+}
+
+.row {
+  width: 50%;
+  margin: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  text-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    min-width: auto;
+  }
+
+  footer {
+    font-size: .75em;
+    font-style: italic;
+    padding-top: 20px;
+  }
